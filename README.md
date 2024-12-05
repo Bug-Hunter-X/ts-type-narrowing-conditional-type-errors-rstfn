@@ -1,0 +1,3 @@
+# TypeScript Type Narrowing Bug
+
+This repository demonstrates a subtle bug related to type narrowing in TypeScript conditional types. The `processValue` function attempts to handle both string and number types, but a type error occurs because the compiler doesn't fully recognize that the 'else' block implies the value must be a number after the string check.  The solution showcases how to correctly handle this scenario.
